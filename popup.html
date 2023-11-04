@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Converter Extension</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>File Converter Extension</h1>
+    <form id="fileConverterForm">
+      <label for="file">Select a file:</label>
+      <input type="file" id="file" accept="image/*,.pdf,.doc,.docx" required>
+      <label for="convert">Convert file to:</label>
+      <select id="convert" required>
+        <option value="webp">WebP</option>
+        <option value="jpg">JPEG</option>
+        <option value="png">PNG</option>
+        <option value="gif">GIF</option>
+        <option value="pdf">PDF</option>
+        <option value="doc">DOC</option>
+        <option value="docx">DOCX</option>
+      </select>
+      <button type="submit">Convert</button>
+    </form>
+    <div id="outputMessage"></div>
+  </div>
+</body>
+</html>
